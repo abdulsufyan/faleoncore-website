@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Faleon Core LLP</title>
   <style>
+    * {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
@@ -16,24 +20,24 @@
     header {
       background-color: #051d40;
       color: white;
-      padding: 30px 20px;
       text-align: center;
+      padding: 30px 20px 10px;
     }
 
     .logo {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
+      gap: 15px;
       flex-wrap: wrap;
     }
 
     .logo img {
-      height: 60px;
+      height: 80px;
     }
 
     .logo h1 {
-      font-size: 1.8em;
+      font-size: 2em;
       margin: 0;
     }
 
@@ -41,6 +45,34 @@
       font-size: 1.2em;
       margin-top: 5px;
       font-weight: 500;
+    }
+
+    nav {
+      background-color: #ffffff;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #051d40;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #007bff;
+    }
+
+    .highlight-banner {
+      background: linear-gradient(90deg, #007bff, #6610f2);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.3em;
+      font-weight: bold;
     }
 
     section {
@@ -80,6 +112,15 @@
       font-size: 1em;
       font-weight: 500;
       color: white;
+      text-decoration: none;
+      display: block;
+      transition: transform 0.2s ease;
+      text-align: center;
+    }
+
+    .course-box:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
     }
 
     .course-box:nth-child(1) { background-color: #007bff; }
@@ -91,17 +132,11 @@
     .course-box:nth-child(7) { background-color: #dc3545; }
     .course-box:nth-child(8) { background-color: #6610f2; }
 
-    .course-box:hover {
-      transform: scale(1.02);
-      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-    }
-
     footer {
       background-color: #051d40;
       color: white;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      padding: 30px 20px;
     }
 
     .social-links {
@@ -109,15 +144,25 @@
     }
 
     .social-links a {
-      margin: 0 10px;
+      margin: 0 15px;
+      font-size: 1.6em;
       color: white;
-      font-size: 1.3em;
-      text-decoration: none;
-      transition: color 0.3s;
+      transition: 0.3s;
     }
 
     .social-links a:hover {
-      color: #f0c330;
+      color: #ffc107;
+    }
+
+    .cta {
+      background-color: #fff3cd;
+      color: #856404;
+      padding: 20px;
+      border-left: 5px solid #ffc107;
+      margin: 30px 0;
+      font-size: 1.1em;
+      font-weight: bold;
+      text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -128,59 +173,92 @@
       .course-box {
         font-size: 0.95em;
       }
+
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
     }
   </style>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
   <header>
     <div class="logo">
-      <img src="your-logo.png" alt="Faleon Core LLP Logo" onerror="this.style.display='none';">
+      <img src="LOGO.jpg.jpg" alt="Faleon Core LLP Logo" />
       <h1>Faleon Core LLP</h1>
     </div>
     <div class="tagline">Innovate. Build. Elevate.</div>
   </header>
 
-  <section>
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#vision">Vision</a>
+    <a href="#mission">Mission</a>
+    <a href="#courses">Courses</a>
+    <a href="#register">Register</a>
+  </nav>
+
+  <div class="highlight-banner">
+    🚀 Ready to Start Your Tech Journey? Apply Now!
+  </div>
+
+  <section id="about">
     <div class="section-block">
       <h2>About Us</h2>
       <p>Faleon Core LLP is an emerging software and tech training company with a mission to bridge the gap between education and industry. We specialize in internship programs across multiple domains like AI/ML, Web Development, and Cybersecurity, offering real-world projects and mentoring to boost career readiness.</p>
     </div>
+  </section>
 
+  <section id="vision">
     <div class="section-block">
       <h2>Our Vision</h2>
       <p>To inspire and develop future leaders in technology through inclusive, innovative, and industry-ready learning solutions that shape tomorrow’s talent.</p>
     </div>
+  </section>
 
+  <section id="mission">
     <div class="section-block">
       <h2>Our Mission</h2>
       <p>To deliver impactful, affordable, and practical tech education and internships that transform passionate learners into professionals ready for the digital world.</p>
     </div>
   </section>
 
-  <section>
+  <section id="courses">
     <h2>Our Internship Courses</h2>
     <div class="courses">
-      <div class="course-box">🌐 Full Stack Web Development</div>
-      <div class="course-box">🤖 Artificial Intelligence & Machine Learning (AI/ML)</div>
-      <div class="course-box">🔐 Cybersecurity</div>
-      <div class="course-box">🎨 UI/UX Design</div>
-      <div class="course-box">📊 Data Science</div>
-      <div class="course-box">🐍 Python Programming</div>
-      <div class="course-box">💻☕ Java Programming</div>
-      <div class="course-box">🌐📡 Internet of Things (IoT)</div>
+      <a class="course-box" href="#register">🌐 Full Stack Web Development</a>
+      <a class="course-box" href="#register">🤖 Artificial Intelligence & Machine Learning (AI/ML)</a>
+      <a class="course-box" href="#register">🔐 Cybersecurity</a>
+      <a class="course-box" href="#register">🎨 UI/UX Design</a>
+      <a class="course-box" href="#register">📊 Data Science</a>
+      <a class="course-box" href="#register">🐍 Python Programming</a>
+      <a class="course-box" href="#register">💻☕ Java Programming</a>
+      <a class="course-box" href="#register">🌐📡 Internet of Things (IoT)</a>
     </div>
+  </section>
+
+  <section id="register" class="cta">
+    ✅ Fill the registration form to reserve your internship spot now!  
+    <br><br>
+    👉 <a href="https://forms.gle/YOUR_FORM_LINK_HERE" target="_blank">Click Here to Register</a>
   </section>
 
   <footer>
     <div>Follow Us</div>
     <div class="social-links">
-      <a href="https://www.linkedin.com" target="_blank">🔗</a>
-      <a href="https://wa.me/yourwhatsapplink" target="_blank">📱</a>
-      <a href="https://www.instagram.com" target="_blank">📸</a>
-      <a href="mailto:faleoncore@gmail.com">📧</a>
+      <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://wa.me/YOURNUMBER" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/YOURINSTAGRAM" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:faleoncore@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
     <br />
     &copy; 2025 Faleon Core LLP. All rights reserved.
   </footer>
+
 </body>
 </html>
