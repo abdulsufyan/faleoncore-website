@@ -50,12 +50,16 @@
       padding: 18px;
       font-size: 1.05em;
       text-align: center;
-      box-shadow: 0 0 15px #ffd700;
-      animation: glow 1.6s infinite alternate ease-in-out;
+      animation: glow 1.5s infinite alternate ease-in-out, pulse 2s infinite;
     }
     @keyframes glow {
       from { box-shadow: 0 0 10px #ffd600; }
       to { box-shadow: 0 0 20px #ffc107, 0 0 30px #ffc107; }
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+      100% { transform: scale(1); }
     }
     .highlight-banner a {
       font-weight: bold;
@@ -146,7 +150,6 @@
     </div>
     <div class="tagline">Innovate. Build. Elevate.</div>
   </header>
-
   <nav>
     <a href="#about">About</a>
     <a href="#vision">Vision</a>
@@ -154,27 +157,22 @@
     <a href="#courses">Courses</a>
     <a href="#register">Register</a>
   </nav>
-
   <div class="highlight-banner">
-    ✅ Fill the registration form to reserve your internship spot now!  
-    👉 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIPdZfQehHV_vs5xkTX30-j1CxTuf0RiB42GQ8kybWxOQeKg/viewform?usp=header" target="_blank">Click Here to Register</a>
+    Fill the registration form to reserve your internship spot now! 👉
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIPdZfQehHV_vs5xkTX30-j1CxTuf0RiB42GQ8kybWxOQeKg/viewform?usp=header" target="_blank">Click Here to Register</a>
   </div>
-
   <section id="about" class="colored-section" style="background:#e3f2fd">
     <h2>About Us</h2>
     <p>Faleon Core LLP is a forward-thinking technology company dedicated to empowering learners and professionals with cutting-edge skills in software, AI, and emerging tech.</p>
   </section>
-
   <section id="vision" class="colored-section" style="background:#e8f5e9">
     <h2>Our Vision</h2>
     <p>To become a global leader in tech-based learning and innovation by transforming talent into top-tier professionals.</p>
   </section>
-
   <section id="mission" class="colored-section" style="background:#fff8e1">
     <h2>Our Mission</h2>
     <p>To deliver accessible, quality-driven, and hands-on learning experiences that equip individuals to succeed in modern industries.</p>
   </section>
-
   <section id="courses">
     <h2>Our Internship Courses</h2>
     <div class="courses">
@@ -188,13 +186,11 @@
       <a class="course-box" style="background:#17a2b8" href="#"><i class="fas fa-network-wired"></i>Internet of Things (IoT)</a>
     </div>
   </section>
-
   <section id="register" class="colored-section" style="background:#fce4ec">
     <h2>Register Now</h2>
     <p>Fill the registration form to reserve your internship spot today.</p>
     <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfIPdZfQehHV_vs5xkTX30-j1CxTuf0RiB42GQ8kybWxOQeKg/viewform?usp=header" target="_blank">Click here to register</a></p>
   </section>
-
   <section class="faq">
     <h2>FAQs</h2>
     <div class="faq-item">
@@ -210,7 +206,6 @@
       <p>Between 1–3 months depending on your learning pace.</p>
     </div>
   </section>
-
   <footer>
     <div><strong>Follow Us</strong></div>
     <div class="social-links">
