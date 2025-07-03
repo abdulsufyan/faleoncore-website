@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Faleon Core LLP</title>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/7c4e5d5df8.js" crossorigin="anonymous"></script>
+
   <style>
     * {
       scroll-behavior: smooth;
@@ -12,7 +16,6 @@
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
       background: #f2f6fa;
       color: #333;
     }
@@ -67,12 +70,14 @@
     }
 
     .highlight-banner {
-      background: linear-gradient(90deg, #007bff, #6610f2);
-      color: white;
+      background: #fff3cd;
+      color: #856404;
       padding: 20px;
-      text-align: center;
-      font-size: 1.3em;
+      font-size: 1.1em;
       font-weight: bold;
+      text-align: center;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     section {
@@ -92,11 +97,6 @@
       margin-bottom: 30px;
     }
 
-    .section-block p {
-      font-size: 1.05em;
-      line-height: 1.6;
-    }
-
     .courses {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -105,17 +105,15 @@
     }
 
     .course-box {
-      background-color: white;
       padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
       font-size: 1em;
       font-weight: 500;
       color: white;
       text-decoration: none;
       display: block;
-      transition: transform 0.2s ease;
       text-align: center;
+      transition: transform 0.2s ease;
     }
 
     .course-box:hover {
@@ -154,24 +152,9 @@
       color: #ffc107;
     }
 
-    .cta {
-      background-color: #fff3cd;
-      color: #856404;
-      padding: 20px;
-      border-left: 5px solid #ffc107;
-      margin: 30px 0;
-      font-size: 1.1em;
-      font-weight: bold;
-      text-align: center;
-    }
-
     @media (max-width: 600px) {
       .logo h1 {
         font-size: 1.5em;
-      }
-
-      .course-box {
-        font-size: 0.95em;
       }
 
       nav a {
@@ -180,21 +163,19 @@
       }
     }
   </style>
-
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
+  <!-- Header with logo and title -->
   <header>
     <div class="logo">
-      <img src="LOGO.jpg.jpg" alt="Faleon Core LLP Logo" />
+      <img src="LOGO.jpg" alt="Faleon Core LLP Logo" />
       <h1>Faleon Core LLP</h1>
     </div>
     <div class="tagline">Innovate. Build. Elevate.</div>
   </header>
 
-  <!-- Navigation Menu -->
+  <!-- Navigation -->
   <nav>
     <a href="#about">About</a>
     <a href="#vision">Vision</a>
@@ -203,62 +184,65 @@
     <a href="#register">Register</a>
   </nav>
 
+  <!-- Banner -->
   <div class="highlight-banner">
-    🚀 Ready to Start Your Tech Journey? Apply Now!
+    ✅ Fill the registration form to reserve your internship spot now!  
+    👉 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIPdZfQehHV_vs5xkTX30-j1CxTuf0RiB42GQ8kybWxOQeKg/viewform?usp=header" target="_blank">Click Here to Register</a>
   </div>
 
+  <!-- Sections -->
   <section id="about">
     <div class="section-block">
       <h2>About Us</h2>
-      <p>Faleon Core LLP is an emerging software and tech training company with a mission to bridge the gap between education and industry. We specialize in internship programs across multiple domains like AI/ML, Web Development, and Cybersecurity, offering real-world projects and mentoring to boost career readiness.</p>
+      <p>Faleon Core LLP is a forward-thinking technology company dedicated to empowering learners and professionals with cutting-edge skills in software, AI, and emerging tech.</p>
     </div>
   </section>
 
   <section id="vision">
     <div class="section-block">
       <h2>Our Vision</h2>
-      <p>To inspire and develop future leaders in technology through inclusive, innovative, and industry-ready learning solutions that shape tomorrow’s talent.</p>
+      <p>To become a global leader in tech-based learning and innovation by transforming talent into top-tier professionals.</p>
     </div>
   </section>
 
   <section id="mission">
     <div class="section-block">
       <h2>Our Mission</h2>
-      <p>To deliver impactful, affordable, and practical tech education and internships that transform passionate learners into professionals ready for the digital world.</p>
+      <p>To deliver accessible, quality-driven, and hands-on learning experiences that equip individuals to succeed in modern industries.</p>
     </div>
   </section>
 
   <section id="courses">
     <h2>Our Internship Courses</h2>
     <div class="courses">
-      <a class="course-box" href="#register">🌐 Full Stack Web Development</a>
-      <a class="course-box" href="#register">🤖 Artificial Intelligence & Machine Learning (AI/ML)</a>
-      <a class="course-box" href="#register">🔐 Cybersecurity</a>
-      <a class="course-box" href="#register">🎨 UI/UX Design</a>
-      <a class="course-box" href="#register">📊 Data Science</a>
-      <a class="course-box" href="#register">🐍 Python Programming</a>
-      <a class="course-box" href="#register">💻☕ Java Programming</a>
-      <a class="course-box" href="#register">🌐📡 Internet of Things (IoT)</a>
+      <a class="course-box" href="https://docs.google.com/forms/d/e/1FAIpQLSfIPdZfQehHV_vs5xkTX30-j1CxTuf0RiB42GQ8kybWxOQeKg/viewform?usp=header" target="_blank">🌐 Full Stack Web Development</a>
+      <a class="course-box" href="https://docs.google.com/forms/d/e/1FAIpQLSfIPdZfQehHV_vs5xkTX30-j1CxTuf0RiB42GQ8kybWxOQeKg/viewform?usp=header" target="_blank">🤖 Artificial Intelligence & Machine Learning (AI/ML)</a>
+      <a class="course-box" href="https://docs.google.com/forms/d/e/1FAIpQLSfIPdZfQehHV_vs5xkTX30-j1CxTuf0RiB42GQ8kybWxOQeKg/viewform?usp=header" target="_blank">🔐 Cybersecurity</a>
+      <a class="course-box" href="https://docs.google.com/forms/d/e/1FAIpQLSfIPdZfQehHV_vs5xkTX30-j1CxTuf0RiB42GQ8kybWxOQeKg/viewform?usp=header" target="_blank">🎨 UI/UX Design</a>
+      <a class="course-box" href="https://docs.google.com/forms/d/e/1FAIpQLSfIPdZfQehHV_vs5xkTX30-j1CxTuf0RiB42GQ8kybWxOQeKg/viewform?usp=header" target="_blank">📊 Data Science</a>
+      <a class="course-box" href="https://docs.google.com/forms/d/e/1FAIpQLSfIPdZfQehHV_vs5xkTX30-j1CxTuf0RiB42GQ8kybWxOQeKg/viewform?usp=header" target="_blank">🐍 Python Programming</a>
+      <a class="course-box" href="https://docs.google.com/forms/d/e/1FAIpQLSfIPdZfQehHV_vs5xkTX30-j1CxTuf0RiB42GQ8kybWxOQeKg/viewform?usp=header" target="_blank">💻☕ Java Programming</a>
+      <a class="course-box" href="https://docs.google.com/forms/d/e/1FAIpQLSfIPdZfQehHV_vs5xkTX30-j1CxTuf0RiB42GQ8kybWxOQeKg/viewform?usp=header" target="_blank">🌐📡 Internet of Things (IoT)</a>
     </div>
   </section>
 
-  <section id="register" class="cta">
+  <!-- Register section -->
+  <div class="highlight-banner" id="register">
     ✅ Fill the registration form to reserve your internship spot now!  
-    <br><br>
-    👉 <a href="https://forms.gle/YOUR_FORM_LINK_HERE" target="_blank">Click Here to Register</a>
-  </section>
+    👉 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIPdZfQehHV_vs5xkTX30-j1CxTuf0RiB42GQ8kybWxOQeKg/viewform?usp=header" target="_blank">Click Here to Register</a>
+  </div>
 
+  <!-- Footer -->
   <footer>
     <div>Follow Us</div>
     <div class="social-links">
-      <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://wa.me/YOURNUMBER" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://www.instagram.com/YOURINSTAGRAM" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/faleon-core-llp/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://whatsapp.com/channel/0029VbAxDfhICVffoNkUIJ15" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/faleon_core?igsh=ZTFoODUweTc2OW13&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="mailto:faleoncore@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
     <br />
     &copy; 2025 Faleon Core LLP. All rights reserved.
   </footer>
-
 </body>
 </html>
